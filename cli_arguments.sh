@@ -1,10 +1,7 @@
 #!/bin/bash
+read -a arg
+i=1
 
-# Compteur pour numéroter les arguments
-compteur=1
-
-# Parcourir tous les arguments avec $@
-for arg in "$@"; do
-    echo "Argument $compteur : $arg"
-    ((compteur++))
+for arg in "${arg[@]}"; do
+    echo "Argument $((i++)): $arg"
 done

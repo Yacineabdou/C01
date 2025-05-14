@@ -7,13 +7,13 @@ op=$3
 read a b op
 
 if [ "$op" = "+" ]; then
-    Resultat=$(($a + $b))
+    resultat=$(($a + $b))
 elif [ "$op" = "-" ]; then
-    Resultat=$(($a - $b))
+    resultat=$(($a - $b))
 elif [ "$op" = "*" ]; then
-    Resultat=$(($a * $b))
+    resultat=$(($a * $b))
 elif [ "$op" = "/" ]; then
-    Resultat=$(($a / $b))
+    resultat=$(($a / $b))
 fi
-echo "Résultat : $Resultat"
+echo "Résultat : $resultat"
 exit 0
